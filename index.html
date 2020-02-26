@@ -5,11 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Task - Noroff</title>
+    <title>JQuery Events - Noroff</title>
+
 
     <link rel="stylesheet" href="./css/master.css" text="text/css" />
 </head>
 <body>
+
+    <div class="question question--1">
+        <p class="question__text">Create an alert that says "Clicked" when the button is clicked</p>
+        <button class="question__target--click">Click me</button>
+    </div>
+
+    <div class="question question--2">
+        <p class="question__text">When a key is pressed inside the textarea, log it to the console.</p>
+        <textarea class="question__target--keypress"></textarea>
+    </div>
+
+    <div class="question question--3">
+        <p class="question__text">Stop the form from submitting to ./this-page-shouldnt-be-reached.html by using the event object</p>
+        <form class="question__target--submit" action="./this-page-shouldnt-be-reached.html">
+            <input type="text" name="formElement" value="Hei" />
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="question question--4">
+        <p class="question__text">Handle browsers scroll event.  When the event fires, log out the current scroll position of the window</p>
+
+        <!-- make the browser tall enough to scroll -->
+        <div style="height: 2000px"></div>
+    </div>
+
+
+    <!-- include jQuery library first -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./js/master.js"></script>
 </body>
 </html>
